@@ -9,9 +9,8 @@
 
 <body>
     <ul>
+        <li><a href="{{route('test.index')}}">test</a></li>
         <li><a href="{{route('image')}}">ImageController</a></li>
-        <li><a href="{{route('jszip')}}">jszip</a></li>
-        <li><a href="{{route('test')}}">test</a></li>
     </ul>
 </body>
 

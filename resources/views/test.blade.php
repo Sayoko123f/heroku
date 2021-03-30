@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    {{-- <link rel="stylesheet" href="{{asset('css/app.css')}}" /> --}}
 </head>
 
 <body>
-    <div id="app">
-        <test-test work-url="{{asset('js/worker.js')}}"></test-test>
+    <div class="container">
+        @foreach ($data as $item)
+        {{ $item->id }}
+        @endforeach
     </div>
-    <script src="{{asset('js/app.js')}}" defer></script>
+
+    {{ $data->links() }}
+    <form action="{{route('test.store')}}" method="POST">
+        @csrf
+        <button type="submit" class="btn btn-primary">Insert</button>
+    </form>
 </body>
 
 </html>
