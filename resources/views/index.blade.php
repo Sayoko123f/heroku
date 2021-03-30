@@ -10,7 +10,7 @@
 <body>
     <ul>
         <li><a href="{{route('test.index')}}">test</a></li>
-        <li><a href="{{route('image')}}">ImageController</a></li>
+        {{-- <li><a href="{{route('image')}}">ImageController</a></li> --}}
     </ul>
 </body>
 
